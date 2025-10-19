@@ -1,12 +1,13 @@
 .Header {
-    background-color: #001826;
-    
+  background-color: #001826;
+
 
 }
+
 .Header img {
-  height: 15vh;
+  height: 8vh;
   border: 3px solid transparent;
-  padding: 1rem 1rem 1rem 1rem;
+
 }
 
 .Header img:hover {
@@ -15,7 +16,8 @@
 
 .HeaderText {
   color: white;
- 
+  font-family: Roboto;
+
 }
 
 .HeaderText:hover {
@@ -24,6 +26,7 @@
   text-decoration-thickness: 3px;
 
 }
+
 .HeroMobile {
   width: 100%;
   height: 35vh;
@@ -36,30 +39,90 @@
   display: none;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 400px) {
   .Header {
     display: grid;
-    grid-template-columns: auto 27rem;
-    grid-template-rows: auto 2rem;
+    grid-template-columns: auto 1fr;
     align-items: center;
+    gap: .5rem;
     padding: 1rem;
   }
+
   .Header img {
-    grid-column: 1 / 4;
-    grid-row: 1 / 2;
-    max-width: 8rem;
-    gap: 0.1rem;
+    grid-column: 1 / 2;
+    height: 10vh;
+    max-width: 10rem;
+    padding: 0.1rem 0.1rem 0.2rem 0.1rem;
   }
 
+  .HeaderText {
+    grid-column: 2 / 3;
+    font-size: 1rem;
+    font-weight: 650;
+    white-space: nowrap;
+  }
+
+  .HeaderText br {
+    display: block;
+  }
+}
+@media screen and (max-width: 400px) {
+  .Header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: .5rem;
+    padding: 1rem;
+  }
+
+  .Header img {
+    grid-column: 1 / 2;
+    height: 10vh;
+    max-width: 10rem;
+    padding: 0.1rem 0.1rem 0.2rem 0.1rem;
+  }
 
   .HeaderText {
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-  font-size: 1.1rem;
-  white-space: nowrap;
-}
+    grid-column: 2 / 3;
+    font-size: 1rem;
+    font-weight: 650;
+    white-space: nowrap;
+  }
 
-.HeaderText br {
+  .HeaderText br {
+    display: block;
+  }
+}
+@media screen and (min-width: 400px) {
+  .Header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.7rem 1.5rem 1.8rem 1rem;
+  }
+  .HeaderText {
+    grid-column: 2 / 3;
+    font-size: 1.4rem;
+    font-weight: 650;
+    white-space: nowrap;
+    padding:1.5rem 0.1rem 0.1rem 0.1rem;
+  }
+
+  .HeaderText br {
     display: none;
+  }
+  .HeroMobile {
+    display: none;
+  }
+
+  .HeroDesktop {
+    display: block;
+    width: 100%;
+    height: 70vh;
+    margin-top: 0px;
+    padding: 0;
+    box-sizing: border-box;
   }
 }
