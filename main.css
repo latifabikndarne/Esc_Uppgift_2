@@ -64,21 +64,15 @@
   display: none;
 }
 
-.cta-button {
-  background-color: #079ce1;
-  color: white;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  font-family: Roboto;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+.CATButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
 }
 
 
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   .Header {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -128,9 +122,39 @@
 .HeroDesktop {
   display: none;
 }
+
+.OnsiteButton {
+  background-color: #89d9e9;
+  font-family: Roboto;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #001826;
+  padding: 0.8rem 1.7rem;
+  margin: 0.9rem;
+  border: none;
+  border-radius: 2px;
+}
+.OnsiteButton:hover {
+ border: 3px solid #ac47c8;
 }
 
-@media screen and (min-width: 601px) {
+.OnlineButton {
+  font-family: Roboto;
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: rgb(71, 160, 198);
+  margin: 0.4rem;
+  background: none;
+  border: none;
+  padding: 0rem;
+  text-decoration: underline; 
+} 
+.OnlineButton:hover {
+  text-decoration: underline thickness 2px color: #89d9e9;
+}
+}
+
+@media screen and (min-width: 501px) {
   .Header {
     display: grid;
     grid-template-columns: auto auto 1fr;
@@ -207,5 +231,21 @@
   }
   .HeroMobile {
     display: none;
-  } 
+  
 }
+}
+}
+
+/*.On-site challenges {
+  font-family: Roboto;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #001826;
+  margin: 1rem;
+} 
+.On-site challenges a {
+  color: #001826;
+  text-decoration: underline;
+}*
+
+
