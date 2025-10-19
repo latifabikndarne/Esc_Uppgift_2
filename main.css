@@ -1,13 +1,10 @@
 .Header {
   background-color: #001826;
-
-
 }
 
 .Header img {
   height: 8vh;
   border: 3px solid transparent;
-
 }
 
 .Header img:hover {
@@ -17,14 +14,35 @@
 .HeaderText {
   color: white;
   font-family: Roboto;
-
 }
 
 .HeaderText:hover {
   text-decoration: underline;
   text-decoration-color: #079ce1;
   text-decoration-thickness: 3px;
+}
 
+
+.NavigationBar ul {
+  display: flex;
+  list-style: none;
+  margin-left: 50px;
+  padding: 0;
+  gap: 1rem;
+}
+
+.NavigationBar li {
+  font-family: Roboto;
+  font-weight: 500;
+}
+
+.NavigationBar a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.NavigationBar a:hover {
+  text-decoration: underline;
 }
 
 .HeroMobile {
@@ -39,6 +57,7 @@
   display: none;
 }
 
+
 @media screen and (max-width: 400px) {
   .Header {
     display: grid;
@@ -65,56 +84,79 @@
   .HeaderText br {
     display: block;
   }
+
+  .NavigationBar ul {
+    display: none;
+  }
+  .HeroMobile {
+  width: 100%;
+  height: 35vh;
+  margin-top: 0px;
+  padding: 0;
+  box-sizing: border-box;
 }
-@media screen and (max-width: 400px) {
-  .Header {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center;
-    gap: .5rem;
-    padding: 1rem;
-  }
 
-  .Header img {
-    grid-column: 1 / 2;
-    height: 10vh;
-    max-width: 10rem;
-    padding: 0.1rem 0.1rem 0.2rem 0.1rem;
-  }
-
-  .HeaderText {
-    grid-column: 2 / 3;
-    font-size: 1rem;
-    font-weight: 650;
-    white-space: nowrap;
-  }
-
-  .HeaderText br {
-    display: block;
-  }
+.HeroDesktop {
+  display: none;
+}
 }
 @media screen and (min-width: 400px) {
   .Header {
     display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: auto 1fr;
+    grid-template-columns: auto auto 1fr;
+    grid-template-rows: auto auto;
     align-items: center;
     gap: 1rem;
-    padding: 0.7rem 1.5rem 1.8rem 1rem;
+    padding: 0.6rem;
   }
+
+  .Header img {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
   .HeaderText {
     grid-column: 2 / 3;
     font-size: 1.4rem;
     font-weight: 650;
     white-space: nowrap;
-    padding:1.5rem 0.1rem 0.1rem 0.1rem;
+    padding: 2rem 1rem 1rem 0.1rem;
   }
 
   .HeaderText br {
     display: none;
   }
-  .HeroMobile {
-    display: none;
+
+  .NavigationBar {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    justify-self: center;
+    gap: 3rem;
+  }
+ .NavigationBar ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  gap: 3rem;
+}
+  .NavigationBar li {
+    font-family: Roboto;
+    font-size: 0.8rem;
+    font-weight: 500;
+   
+  }
+
+  .NavigationBar a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .NavigationBar a:hover {
+    text-decoration: underline;
+    text-decoration-color: #079ce1;
+    text-decoration-thickness: 2px;
   }
 
   .HeroDesktop {
@@ -125,4 +167,7 @@
     padding: 0;
     box-sizing: border-box;
   }
+  .HeroMobile {
+    display: none;
+  } 
 }
