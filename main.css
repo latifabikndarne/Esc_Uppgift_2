@@ -4,11 +4,11 @@
 
 .Header img {
   height: 8vh;
-  
+  border: 2px solid transparent;
 }
 
 .Header img:hover {
-  border: 3px solid #079ce1;
+  border: 2px solid #079ce1;
 }
 
 .HeaderText {
@@ -47,9 +47,6 @@
 .MainContent {
   background-color: white;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto;
-  padding: 1rem;
 }
 
 .HeroMobile {
@@ -64,32 +61,31 @@
   display: none;
 }
 
-.CATButton {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 1rem;
-}
+
 
 
 @media screen and (max-width: 500px) {
   .Header {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 8rem;
+    grid-template-rows: auto;
     align-items: center;
-    gap: .5rem;
+    justify-items: start;
+    column-gap: 0rem;
     padding: 1rem;
   }
 
   .Header img {
     grid-column: 1 / 2;
+    display:block; 
     height: 10vh;
     max-width: 10rem;
-    padding: 0.1rem 0.1rem 0.2rem 0.1rem;
+    border: 2px solid transparent;
+    padding-bottom: 1rem;
   }
 
   .HeaderText {
-    grid-column: 2 / 3;
+    grid-column: 2 / 2;
     font-size: 1rem;
     font-weight: 650;
     white-space: nowrap;
@@ -103,61 +99,82 @@
     display: none;
   }
 
-  .MainContent  {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto auto;
-  padding: 0rem;
+  .MainContent {
+    display: grid;
+    grid-template-rows: auto;
+    padding: 0;
   }
 
   .HeroMobile {
-  display: block;
-  width: 100%;
-  height: 35vh;
-  margin-top: 0px;
-  padding: 0;
-  box-sizing: border-box;
-}
+    grid-column: 1 / -1;
+    display: block;
+    width: 100%;
+    height: 35vh;
+    object-fit: cover;
+    padding: 0px;
+    box-sizing: border-box;
+  }
 
-.HeroDesktop {
-  display: none;
-}
+  .HeroDesktop {
+    display: none;
+  }
 
-.OnsiteButton {
-  background-color: #89d9e9;
-  font-family: Roboto;
-  font-size: 0.9rem;
-  font-weight: 700;
-  color: #001826;
-  padding: 0.8rem 1.7rem;
-  margin: 0.9rem;
-  border: none;
-  border-radius: 2px;
-}
-.OnsiteButton:hover {
- border: 3px solid #ac47c8;
-}
+  .CTAButton {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin-top: 1rem;
 
-.OnlineButton {
-  font-family: Roboto;
-  font-size: 0.6rem;
-  font-weight: 700;
-  color: rgb(71, 160, 198);
-  margin: 0.4rem;
-  background: none;
-  border: none;
-  padding: 0rem;
-  text-decoration: underline; 
-} 
-.OnlineButton:hover {
-  text-decoration: underline thickness 2px color: #89d9e9;
-}
+    .OnsiteButton {
+      order: 1;
+    }
+    .OnlineButton {
+      order: 2;
+    }
+  }
+
+  .OnsiteButton {
+    background-color: #89d9e9;
+    font-family: Roboto;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #001826;
+    padding: 0.8rem 1.7rem;
+    margin: 0.9rem;
+    border: none;
+    border-radius: 2px;
+    border: 3px solid transparent;
+  }
+
+  .OnsiteButton:hover {
+    border: 3px solid #ac47c8;
+  }
+
+  .OnlineButton {
+    font-family: Roboto;
+    font-size: 0.6rem;
+    font-weight: 700;
+    color: rgb(71, 160, 198);
+    margin: 0.4rem;
+    background: none;
+    border: none;
+    padding: 0rem;
+    text-decoration: underline;
+  }
+
+  .OnlineButton:hover {
+    text-decoration: underline;
+    text-decoration-color: #079ce1;
+    text-decoration-thickness: 3px;
+
+  }
+
 }
 
 @media screen and (min-width: 501px) {
   .Header {
     display: grid;
-    grid-template-columns: auto auto 1fr;
+    grid-template-columns: 8rem 8rem 8rem;
     grid-template-rows: auto auto;
     align-items: center;
     gap: 1rem;
@@ -165,17 +182,17 @@
   }
 
   .Header img {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-    
-}
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    border: 2px solid transparent;
+  }
 
   .HeaderText {
     grid-column: 2 / 3;
     font-size: 1.4rem;
     font-weight: 650;
     white-space: nowrap;
-    padding: 2rem 1rem 1rem 0.1rem;
+    padding: 0rem;
   }
 
   .HeaderText br {
@@ -183,24 +200,27 @@
   }
 
   .NavigationBar {
-    grid-column: 1 / 4;
-    grid-row: 2 / 3;
-    justify-self: center;
-    gap: 3rem;
+    display: grid;
+    grid-template-columns: 8rem 8rem 8rem;
+    grid-template-rows: auto auto;
+    
   }
- .NavigationBar ul {
-  display: flex;
-  list-style: none;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  gap: 3rem;
-}
+
+  .NavigationBar ul {
+    display: grid
+    list-style: none;
+    margin-left: 7rem;
+    gap: 3rem; 
+  }
+
   .NavigationBar li {
+    display: grid;
+    grid-row: 2 / 3; 
+    justify-self: center;
+    align-items: center;
     font-family: Roboto;
     font-size: 0.8rem;
-    font-weight: 500;
-   
+    font-weight: 500; 
   }
 
   .NavigationBar a {
@@ -215,37 +235,61 @@
   }
 
   .MainContent {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto;
-  padding: 0rem;
-}
+    display: grid;
+    grid-template-columns: 8rem 8rem 8rem;
+    grid-template-rows: auto;
+    padding: 0rem;
+  }
 
   .HeroDesktop {
     display: block;
-    width: 100%;
     height: 80vh;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
   }
+
   .HeroMobile {
     display: none;
-  
-}
-}
-}
+  }
 
-/*.On-site challenges {
-  font-family: Roboto;
-  font-size: 1rem;
-  font-weight: 500;
-  color: #001826;
-  margin: 1rem;
-} 
-.On-site challenges a {
-  color: #001826;
-  text-decoration: underline;
-}*
+  .CTAButtons {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: -2.3rem;
+  }
 
+  .OnlineButton {
+    background-color: red;
+    color: white;
+    font-family: Roboto;
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 0.8rem 1.7rem;
+    border-radius: 8px;
+    border: 3px solid transparent;
+    box-sizing: border-box;
+  }
 
+  .OnlineButton:hover {
+    border: 3px solid #ac47c8;
+  }
+
+  .OnsiteButton {
+    background-color: #89d9e9;
+    font-family: Roboto;
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 0.8rem 1.7rem;
+    border-radius: 8px;
+    border: 3px solid transparent;
+    box-sizing: border-box;
+  }
+
+  .OnsiteButton:hover {
+    border: 3px solid #ac47c8;
+  }
+}
