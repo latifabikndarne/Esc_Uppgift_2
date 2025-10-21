@@ -1,3 +1,8 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 .Header {
   background-color: #001826;
 }
@@ -46,9 +51,7 @@
 
 .MainContent {
   background-color: white;
-  display: grid;
-  grid-template-columns: 8rem 8rem 8rem;
-  grid-template-rows: auto;
+  display: block;
 }
 
 .HeroMobile {
@@ -110,14 +113,9 @@ footer {
     display: none;
   }
 
-  .MainContent {
-    display: grid;
-    grid-template-rows: auto;
-    padding: 0;
-  }
+ 
 
   .HeroMobile {
-    grid-column: 1 / -1;
     display: block;
     width: 100%;
     height: 35vh;
@@ -130,7 +128,7 @@ footer {
     display: none;
   }
 
-  .CTAButton {
+  /*.CTAButton {
     display: grid;
     align-items: center;
     justify-items: center;
@@ -178,54 +176,53 @@ footer {
     text-decoration: underline;
     text-decoration-color: #079ce1;
     text-decoration-thickness: 3px;
-  }
+  } */
 
-  .testimonials {
+  /* .testimonials {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-  }
+  } */
 
-  .PopularChallenges{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
-  .h1 {
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 700;
-    margin-top: 1rem;
-  }
+  /* Behåll denna sektion utanför hero */
+.PopularChallenges { 
+  padding: 1rem;
+  margin-top: 2.5rem;        /* ger plats om CTA hänger över heron */
+}
 
-  .PopularChallenges img :nth-child(1) {
-    float: left
-    width: 2rem
-    height: 10vh;
-    margin-bottom: 1rem;
+/* HORISONTELL swipe-rad (Grid) */
+.ChallengeRooms {
+  display: grid;
+  
+  grid-auto-flow: column;     /* ← viktigt: lägg ut i kolumner, inte rader */
+  grid-auto-columns: 100%;    /* 1 kort per “sida” (hela bredden) */
+  overflow-x: auto;           /* swipe sidledes */
+  gap: 1rem;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
 
-  }
+.Room {
+  scroll-snap-align: center;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,.15);
+}
 
-   .PopularChallenges img :nth-child(2) { 
-    float: left;
-    width: 2rem;
-    height: 10vh;
-    margin-bottom: 1rem;
+.Room img {
+  width: 100%;
+  display: block;
+  border-radius: 12px 12px 0 0;
+}
 
-  }
-   .PopularChallenges img :nth-child(3) {
-    float: left;
-    width: 2rem;
-    height: 10vh;
-    margin-bottom: 1rem;
-
-  }
+/* (valfritt) dölj scrollbar i WebKit */
+.ChallengeRooms::-webkit-scrollbar { display: none; }
 
 
 }
-  footer {
+
+footer {
   background-color: #001826;
   color: white;
   display: flex;
@@ -320,7 +317,7 @@ footer {
   .HeroMobile {
     display: none;
   }
-  
+
 
   .CTAButtons {
     display: flex;
@@ -360,12 +357,13 @@ footer {
     border: 3px solid #ac47c8;
   }
 }
+
 .testimonials {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
 
 footer {
   background-color: #001826;
