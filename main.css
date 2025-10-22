@@ -120,6 +120,15 @@ footer {
     display: none;
   }
 
+  .MainContent {
+    grid-template-columns: 7rem;
+    grid-template-rows: auto;
+    align-items: center;
+    justify-items: start;
+    column-gap: 0rem;
+    padding: 0;
+  }
+
   .HeroMobile {
     display: block;
     width: 100%;
@@ -151,7 +160,7 @@ footer {
   .OnsiteButton {
     background-color: #89d9e9;
     font-family: Roboto;
-    font-size: 0.9rem;
+    font-size: 1.3rem;
     font-weight: 700;
     color: #001826;
     padding: 0.8rem 1.7rem;
@@ -167,13 +176,14 @@ footer {
 
   .OnlineButton {
     font-family: Roboto;
-    font-size: 0.6rem;
+    font-size: 0.9rem;
     font-weight: 700;
     color: rgb(71, 160, 198);
     margin: 0.4rem;
     background: none;
     border: none;
-    padding: 0rem;
+    padding-bottom: 3rem;
+    padding-top: 0.8rem;
     text-decoration: underline;
   }
 
@@ -183,172 +193,230 @@ footer {
     text-decoration-thickness: 3px;
   }
 
-  /* .testimonials {
+  .Testimonials {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  } */
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 0rem;
 
-  /* Behåll denna sektion utanför hero */
+  }
+
+  .TestimonialsContent {
+    flex: 1;
+    padding: 2rem;
+
+  }
+
+  /*.Testimonial.second {
+    display: none;
+  }*/
+
+  .TestimonialsContent:hover {
+    border: 3px solid rgb(15, 160, 232);
+  }
+
+  .Testimonials img {
+    width: 100px;
+    height: 10vh;
+    border-radius: 10%;
+    padding-right: 1rem;
+    gap: 0;
+    margin: 0;
+  }
+
+  .Testimonials blockquote {
+    margin: 0;
+  }
+
+  .Testimonials p {
+    margin: 0rem;
+    color: #000;
+    font-style: italic;
+    font-family: sans-serif;
+    font-size: 1.4rem;
+    font-weight: 250;
+    white-space: none;
+    line-height: 1.3;
+    padding: 0;
+  }
+
+  .Testimonials figcaption {
+    margin-top: 0rem;
+    color: #000;
+  }
+
+
+
   .PopularChallenges {
     padding: 1rem;
     margin-top: 2.5rem;
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-weight: 250;
     /* ger plats om CTA hänger över heron */
   }
 
-  /* HORISONTELL swipe-rad (Grid) */
-  .ChallengeRooms {
-    display: grid;
-    grid-auto-flow: column;
-    /* ← viktigt: lägg ut i kolumner, inte rader */
-    grid-auto-columns: 90%;
-    /* 1 kort per “sida” (hela bredden) */
-    overflow-x: auto;
-    /* swipe sidledes */
-    gap: 1rem;
-    scroll-snap-type: x mandatory;
-  }
-
-  .Room {
-    scroll-snap-align: center;
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, .15);
+  .PopularChallenges h2 {
+    padding: 1rem;
+    margin-top: 1rem;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    font-weight: 480;
 
   }
 
-  .Room img {
-    width: 100%;
-    display: block;
-    border-radius: 10px 10px 0 0;
-  }
+    /* HORISONTELL swipe-rad (Grid) */
+    .ChallengeRooms {
+      display: grid;
+      grid-auto-flow: column;
+      /* ← viktigt: lägg ut i kolumner, inte rader */
+      grid-auto-columns: 90%;
+      /* 1 kort per “sida” (hela bredden) */
+      overflow-x: auto;
+      /* swipe sidledes */
+      gap: 1rem;
+      scroll-snap-type: x mandatory;
+    }
 
-  .FullWidthSection {
-    display: flex;
-    flex-direction:column; 
-    justify-content:center;
-    align-items:center;
-    background-color: black;
-    width: 100%;
-    height: 35vh;
-    padding: 1.5rem;
-    gap: 0rem; 
-  }
+    .Room {
+      scroll-snap-align: center;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, .15);
 
-  .FullWidthSectionText {
-    color: #fff;
-    font-family:;
-    text-align: center;
-    font-size: 1rem;
-    
-    margin:0;
-  }
+    }
 
-  .FullWidthSectionText:hover {
-    text-decoration: underline;
-    text-decoration-color: #03b2cd;
-    text-decoration-thickness: 1px;
-  }
+    .Room img {
+      width: 100%;
+      display: block;
+      border-radius: 10px 10px 0 0;
+    }
 
-  .FullWidthSectionButton {
-    color: hwb(192 42% 16%);
-    font-size: 1.2rem;
-    font-weight: 550;
-    text-decoration: none;
-    font-weight: 700;
-    padding: 0.9rem 2.1rem;
-    margin: 0.9rem;
-    border: 1.5px solid hwb(192 42% 16%);
-    border-radius: 0.3rem;
-    
-  }
+    .FullWidthSection {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: black;
+      width: 100%;
+      height: 35vh;
+      padding: 1.5rem;
+      gap: 0rem;
+    }
 
-  .FullWidthSectionButton:hover {
+    .FullWidthSectionText {
+      color: #fff;
+      font-family: ;
+      text-align: center;
+      font-size: 1rem;
+
+      margin: 0;
+    }
+
+    .FullWidthSectionText:hover {
+      text-decoration: underline;
+      text-decoration-color: #03b2cd;
+      text-decoration-thickness: 1px;
+    }
+
+    .FullWidthSectionButton {
+      color: hwb(192 42% 16%);
+      font-size: 1.2rem;
+      font-weight: 550;
+      text-decoration: none;
+      font-weight: 700;
+      padding: 0.9rem 2.1rem;
+      margin: 0.9rem;
+      border: 1.5px solid hwb(192 42% 16%);
+      border-radius: 0.3rem;
+
+    }
+
+    .FullWidthSectionButton:hover {
       border: 2px solid #9c38d6;
     }
 
 
 
-  .Footer {
-    display: grid;
-    grid-template-columns: 1 / 2;
-    background-color: #001826;
-    color: white;
-    font-family: Roboto;
-    font-size: 1rem;
-    gap: 0.5rem;
+    .Footer {
+      display: grid;
+      grid-template-columns: 1 / 2;
+      background-color: #001826;
+      color: white;
+      font-family: Roboto;
+      font-size: 1rem;
+      gap: 0.5rem;
+    }
+
+    .h {
+      font-family: Roboto;
+      font-size: 1rem;
+      font-weight: 200;
+    }
+
+    .Footer:hover {
+      text-decoration: underline;
+      text-decoration-color: #079ce1;
+      text-decoration-thickness: 2px;
+    }
+
+    .FooterSiteMap {
+      grid-column: 1 / -1;
+      display: grid;
+    }
+
+    .FooterSiteMap ul {
+      display: grid;
+      list-style: none;
+      margin-left: 0rem;
+      gap: 0rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    .FooterSiteMap li {
+      text-decoration: none;
+      font-family: Roboto;
+      font-size: 1rem;
+      font-weight: 200;
+
+    }
+
+    .FooterSiteMap a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .FooterContactInfo {
+      grid-column: 1 / -1;
+      display: grid;
+      row-gap: .0rem;
+    }
+
+    .FooterContactInfo ul {
+      display: grid;
+      list-style: none;
+      margin-left: 0rem;
+      gap: 0rem;
+      padding: 0;
+      margin: 0;
+    }
+
+    .FooterContactInfo li {
+      text-decoration: none;
+      font-family: Roboto;
+      font-size: 1rem;
+      font-weight: 200;
+      color: #fff;
+
+    }
+
+    .FooterContactInfo a {
+      color: #fff;
+      text-decoration: none;
+    }
+
   }
-
-  .h {
-    font-family: Roboto;
-    font-size: 1rem;
-    font-weight: 200;
-  }
-
-  .Footer:hover {
-    text-decoration: underline;
-    text-decoration-color: #079ce1;
-    text-decoration-thickness: 2px;
-  }
-
-  .FooterSiteMap {
-    grid-column: 1 / -1;
-    display: grid;
-  }
-
-  .FooterSiteMap ul {
-    display: grid;
-    list-style: none;
-    margin-left: 0rem;
-    gap: 0rem;
-    margin: 0;
-    padding: 0;
-  }
-
-  .FooterSiteMap li {
-    text-decoration: none;
-    font-family: Roboto;
-    font-size: 1rem;
-    font-weight: 200;
-
-  }
-
-  .FooterSiteMap a {
-    color: #fff;
-    text-decoration: none;
-  }
-
-  .FooterContactInfo {
-    grid-column: 1 / -1;
-    display: grid;
-    row-gap: .0rem;
-  }
-
-  .FooterContactInfo ul {
-    display: grid;
-    list-style: none;
-    margin-left: 0rem;
-    gap: 0rem;
-    padding: 0;
-    margin: 0;
-  }
-
-  .FooterContactInfo li {
-    text-decoration: none;
-    font-family: Roboto;
-    font-size: 1rem;
-    font-weight: 200;
-    color: #fff;
-
-  }
-
-  .FooterContactInfo a {
-    color: #fff;
-    text-decoration: none;
-  }
-
-}
 
 
   @media screen and (min-width: 501px) {
@@ -497,15 +565,16 @@ footer {
       padding: 1rem;
       margin-top: 2.5rem;
     }
+
     .PopularChallenge h2 {
       grid-column: 1 / -1;
       justify-self: center;
       text-align: center;
       font-family: sans-serif;
       font-weight: 450;
-       margin: 0 0 1rem;
-      
-      
+      margin: 0 0 1rem;
+
+
     }
 
     .ChallengeRooms {
@@ -532,46 +601,46 @@ footer {
     }
 
     .FullWidthSection {
-    display: flex;
-    flex-direction:column; 
-    justify-content:center;
-    align-items:center;
-    background-color: black;
-   
-    height: 52vh;
-    padding: 1.5rem;
-    gap: 0rem; 
-  }
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: black;
 
-  .FullWidthSectionText {
-    color: #fff;
-    font-family: sans-serif;
-    text-align: center;
-    font-size: 1.5rem;
-    margin:0;
-    padding: 1rem;
-  }
+      height: 52vh;
+      padding: 1.5rem;
+      gap: 0rem;
+    }
 
-  .FullWidthSectionText:hover {
-    text-decoration: underline;
-    text-decoration-color: #035ecd;
-    text-decoration-thickness: 1px;
-  }
+    .FullWidthSectionText {
+      color: #fff;
+      font-family: sans-serif;
+      text-align: center;
+      font-size: 1.5rem;
+      margin: 0;
+      padding: 1rem;
+    }
 
-  .FullWidthSectionButton {
-    color: hwb(192 42% 16%);
-    font-size: 1.2rem;
-    font-weight: 550;
-    text-decoration: none;
-    font-weight: 700;
-    padding: 0.9rem 2.7rem;
-    margin: 0rem;
-    border: 1.5px solid hwb(192 42% 16%);
-    border-radius: 0.3rem;
-    
-  }
+    .FullWidthSectionText:hover {
+      text-decoration: underline;
+      text-decoration-color: #035ecd;
+      text-decoration-thickness: 1px;
+    }
 
-  .FullWidthSectionButton:hover {
+    .FullWidthSectionButton {
+      color: hwb(192 42% 16%);
+      font-size: 1.2rem;
+      font-weight: 550;
+      text-decoration: none;
+      font-weight: 700;
+      padding: 0.9rem 2.7rem;
+      margin: 0rem;
+      border: 1.5px solid hwb(192 42% 16%);
+      border-radius: 0.3rem;
+
+    }
+
+    .FullWidthSectionButton:hover {
       border: 2px solid #9c38d6;
     }
 
