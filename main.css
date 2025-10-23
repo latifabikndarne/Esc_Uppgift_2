@@ -473,21 +473,21 @@ footer {
   order:2;
 }*/
 
-  .Footer {
+  .FooterContainer {
     display: grid;
     grid-template-columns: 1 / 2;
-    grid-template-rows: auto;
     background-color: #001826;
     color: white;
-    font-family: Roboto;
-    font-size: 0.8rem;
-    padding: 2.2rem;
+    font-family: sans-serif;
+    font-size: 0.9rem;
+    font-weight: 50;
+    padding: 2.5rem;
   }
 
   .h {
-    font-family: Roboto;
-    font-size: 1rem;
-    font-weight: 200;
+    font-family:sans-serif;
+    font-size: 2rem;
+    font-weight: 100;
   }
 
   .Footer:hover {
@@ -551,6 +551,11 @@ footer {
     text-decoration: none;
   }
 
+  p, h4 {
+    margin: 0.3rem;
+    padding:0rem;
+  }
+
 
 
 @media screen and (min-width: 501px) {
@@ -590,7 +595,6 @@ footer {
     justify-content: center;
     align-items: center;
     margin-left: 10rem;
-
   }
 
   .NavigationBar ul {
@@ -599,7 +603,6 @@ footer {
     list-style: none;
     flex-wrap: nowrap;
     margin: 0;
-
   }
 
   .NavigationBar li {
@@ -959,13 +962,13 @@ footer {
 .FooterContainer:hover {
   border: 3px solid #079ce1;
 }
-.FooterContainer h4 {
+.Footer h4 {
   font-size: 0.9rem;
   font-weight: 550;
-  margin-bottom: 0.7rem;;
+  
 }
 
-.FooterContainer h4:hover {
+.Footer h4:hover {
    text-decoration: underline;
     text-decoration-color: #03b2cd;
     text-decoration-thickness: 3px;
@@ -1002,7 +1005,6 @@ footer {
     font-family: sans-serif;
     font-size: 0.8rem;
     font-weight: 200;
-
   }
 
   .FooterSiteMap:hover {
@@ -1011,8 +1013,7 @@ footer {
     text-decoration-color: #079ce1;
     text-decoration-thickness: 2px;
   }
-  }
-
+  
   .FooterContactInfo {
     grid-column: 3 / 4;
     justify-self: center;
@@ -1023,7 +1024,6 @@ footer {
     list-style: none;
     margin-left: 0rem;
     margin: .5rem 0 0;
-  
   }
 
   .FooterContactInfo li {
@@ -1041,7 +1041,7 @@ footer {
     text-decoration-thickness: 2px;
 
   }
-    p, h4 {
+   p, h4 {
   margin: 0;
   padding: 0;
 }
