@@ -264,6 +264,9 @@ footer {
     overflow-x: auto;
     gap: 1rem;
     scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-x;
+    
   }
 
   .Room {
@@ -625,6 +628,7 @@ footer {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    position: relative;
   }
 
   .HeroMobile {
@@ -632,12 +636,12 @@ footer {
   }
 
   .CTAButton {
-    grid-column: 1 / -1;
-    place-self: center;
     display: flex;
-    justify-content: center;
+    position: absolute;
     align-items: center;
     gap: 2rem;
+    margin-left: 30rem;
+    margin-top: -2rem;;
     width: 100%;
   }
 
