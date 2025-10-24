@@ -153,7 +153,6 @@ footer {
   .OnlineButton {
     order: 2;
   }
-}
 
 .OnsiteButton {
   background-color: #89d9e9;
@@ -235,14 +234,14 @@ footer {
   margin: 0rem,
 }
 
-
 .Testimonials figcaption {
   color: #000;
   font-size: .95rem;
   font-style: normal;
-  margin-left: 2rem;
+  margin-left: 2.6rem;
   margin-top: 0rem;
 }
+
 
 .PopularChallenges {
   padding: 1rem;
@@ -455,7 +454,7 @@ footer {
   gap: 0;
   margin: 1rem;
   padding: 0rem;
-  ;
+  
 }
 
 .OnlinePlay p:hover {
@@ -587,7 +586,7 @@ h4 {
   padding: 0rem;
 }
 
-
+}
 
 @media screen and (min-width: 501px) {
   .Header {
@@ -713,12 +712,99 @@ h4 {
     border: 3px solid #ac47c8;
   }
 
-  .Testimonials {
+  .TestimonialsContainer {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content:flex-start; 
+    align-items:flex-start;    
+    flex-wrap:wrap; 
   }
+
+.TestimonialsContent1 {
+ display:block;
+  padding: .75rem;
+  border: 3px solid transparent;
+  gap: 0.5rem;
+  width: 450px;
+  height: 150px;
+}
+
+.TestimonialsContent1:hover {
+  border: 3px solid rgb(15, 160, 232);
+}
+.TestimonialsContent1 img {
+  width: 50px;
+  height: 60px;
+  border-radius: 10%;
+  object-fit: cover;
+  padding-top: 1.4rem;
+  padding-left: 0rem;
+  margin-right: 0rem;
+}
+
+.TestimonialsContent1 p {
+  text-align: justify;
+  font-style: italic;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  font-family: 200;
+  letter-spacing: 0px;
+  padding: 0rem;
+  margin: 0rem,
+}
+
+.TestimonialsContent1 figcaption {
+  color: #000;
+  font-size: .95rem;
+  font-style: normal;
+  margin-left: 2.6rem;
+  margin-top: 0rem;
+}
+
+.TestimonialsContent2 {
+  display:block;
+  padding: .75rem;
+  border: 3px solid transparent;
+  gap: 0.5rem;
+  width: 450px;
+  height: 150px;
+}
+.TestimonialsContent2:hover {
+  border: 3px solid rgb(15, 160, 232);
+}
+
+.TestimonialsContent2 img {
+  width: 50px;
+  height: 60px;
+  border-radius: 10%;
+  object-fit: cover;
+  padding-top: 1.4rem;
+  padding-left: 0rem;
+  margin-right: 0rem;
+}
+
+
+.TestimonialsContent2 p {
+  text-align: justify;
+  font-style: italic;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  font-family: 200;
+  letter-spacing: 0px;
+  padding: 0rem;
+  margin: 0rem;
+}
+
+.TestimonialsContent2 figcaption {
+  color: #000;
+  font-size: .95rem;
+  font-style: normal;
+  margin-left: 2.6rem;
+  margin-top: 0rem;
+}
 
   .PopularChallenges {
     display: grid;
@@ -1094,4 +1180,5 @@ h4 {
     margin: 0;
     padding: 0;
   }
+}
 }
