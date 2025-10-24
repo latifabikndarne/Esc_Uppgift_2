@@ -139,7 +139,7 @@ footer {
     display: none;
   }
 
-  .CTAButton {
+  .CTAButtonTop {
     display: grid;
     align-items: center;
     justify-items: center;
@@ -281,6 +281,20 @@ footer {
     display: block;
     border-radius: 10px 10px 0 0;
   }
+
+ .CTAButtonCenter {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin-top: 0.5rem;
+  }
+    .OnsiteButton {
+      order: 1;
+    }
+    .OnlineButton {
+      order: 2;
+    }
+
 
   .FullWidthSection {
     display: flex;
