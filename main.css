@@ -145,295 +145,304 @@ footer {
     justify-items: center;
     margin-top: 0.5rem;
   }
-    .OnsiteButton {
-      order: 1;
-    }
-    .OnlineButton {
-      order: 2;
-    }
-  }
 
   .OnsiteButton {
-    background-color: #89d9e9;
-    font-family: Roboto;
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: #001826;
-    padding: 0.8rem 1.7rem;
-    margin: 0.9rem;
-    border: none;
-    border-radius: 2px;
-    border: 3px solid transparent;
-  }
-
-  .OnsiteButton:hover {
-    border: 3px solid #ac47c8;
+    order: 1;
   }
 
   .OnlineButton {
-    font-family: Roboto;
-    font-size: 0.9rem;
-    font-weight: 700;
-    color: rgb(71, 160, 198);
-    margin: 0.4rem;
-    background: none;
-    border: none;
-    padding-bottom: 3rem;
-    padding-top: 0.8rem;
-    text-decoration: underline;
+    order: 2;
   }
+}
 
-  .OnlineButton:hover {
-    text-decoration: underline;
-    text-decoration-color: #079ce1;
-    text-decoration-thickness: 3px;
-  }
+.OnsiteButton {
+  background-color: #89d9e9;
+  font-family: Roboto;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #001826;
+  padding: 0.8rem 1.7rem;
+  margin: 0.9rem;
+  border: none;
+  border-radius: 2px;
+  border: 3px solid transparent;
+}
 
-  .Testimonials {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 0rem;
-  }
+.OnsiteButton:hover {
+  border: 3px solid #ac47c8;
+}
 
-  .TestimonialsContent {
-    flex: 1;
-    padding: 2rem;
-  }
+.OnlineButton {
+  font-family: Roboto;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: rgb(71, 160, 198);
+  margin: 0.4rem;
+  background: none;
+  border: none;
+  padding-bottom: 3rem;
+  padding-top: 0.8rem;
+  text-decoration: underline;
+}
 
-  .Testimonials:hover {
-    border: 3px solid rgb(15, 160, 232);
-  }
+.OnlineButton:hover {
+  text-decoration: underline;
+  text-decoration-color: #079ce1;
+  text-decoration-thickness: 3px;
+}
 
-  .Testimonials img {
-    width: 100px;
-    height: 10vh;
-    border-radius: 10%;
-    padding-right: 1rem;
-    gap: 0;
-    margin: 0;
-  }
+.Testimonials {
+  display: flex;
+  align-items: flex-start;
+  padding: .75rem;
+  border: 3px solid transparent;
+  gap: 0rem;
+  padding: 0;
+   border: 2px solid transparant;
+}
 
-  .Testimonials blockquote {
-    margin: 0;
-  }
-
-  .Testimonials p {
-    margin: 0rem;
-    color: #000;
-    font-style: italic;
-    font-family: sans-serif;
-    font-size: 1.4rem;
-    font-weight: 250;
-    white-space: none;
-    line-height: 1.3;
-    padding: 0;
-  }
-
-  .Testimonials figcaption {
-    margin-top: 0rem;
-    color: #000;
-  }
-
-  .PopularChallenges {
-    padding: 1rem;
-    margin-top: 2.5rem;
-    font-family: sans-serif;
-    font-size: 1rem;
-    font-weight: 250; 
-  }
-
-  .PopularChallenges h2 {
-    padding: 1rem;
-    margin-top: 1rem;
-    font-family: sans-serif;
-    font-size: 1.5rem;
-    font-weight: 480;
-  }
-
-  .PopularChallenges h2:hover {
-    text-decoration: underline;
-    text-decoration-color: #079ce1;
-    text-decoration-thickness: 3px;
-  }
-
-  .ChallengeRooms {
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 90%;
-    overflow-x: auto;
-    gap: 1rem;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    touch-action: pan-x;
-    
-  }
-
-  .Room {
-    scroll-snap-align: center;
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, .15);
-  }
-
-  .Room img {
-    width: 100%;
-    display: block;
-    border-radius: 10px 10px 0 0;
-  }
-
- .CTAButtonCenter {
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    margin-top: 0.5rem;
-  }
-    .OnsiteButton {
-      order: 1;
-    }
-    .OnlineButton {
-      order: 2;
-    }
+.TestimonialsContent {
+  display: flex;             
+  flex-direction: column;    
+}
 
 
-  .FullWidthSection {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    width: 90%;
-    height: 53vh;
-    padding: 1.5rem;
-    gap: 0rem;
-  }
+.Testimonials:hover {
+  border: 3px solid rgb(15, 160, 232);
+}
 
-  .FullWidthSectionText {
-    color: #fff;
-    font-family: sans-serif;
-    text-align: center;
-    font-size: 1.3rem;
-    margin: 0;
-  }
+.Testimonials img {
+  width: 50px;
+  height: 60px;
+  border-radius: 10%;
+  object-fit: cover;
+  padding-top: 1.3rem;
+  padding-left: 0rem;
+  margin-right: 0rem;
+}
 
-  .FullWidthSectionText:hover {
-    text-decoration: underline;
-    text-decoration-color: #03b2cd;
-    text-decoration-thickness: 1px;
-  }
 
-  .FullWidthSectionButton {
-    color: hwb(192 42% 16%);
-    font-size: 1.2rem;
-    font-weight: 500;
-    font-family: sans-serif;
-    text-decoration: none;
-    font-weight: 700;
-    padding: 0.9rem 2.3rem;
-    margin: 0.9rem;
-    border: 2px solid hwb(192 42% 16%);
-    border-radius: 0.3rem;
-  }
+.Testimonials p {
+  text-align: justify;
+  font-style: italic;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.2;
+   padding: 0rem;
+   margin: 0 rem,
+}
 
-  .FullWidthSectionButton:hover {
-    border: 2px solid #9c38d6;
-  }
 
-   .Options {
-    grid-template-columns: 10rem;
-    grid-template-rows: auto;
-    column-gap: 0rem;
-    padding: 0;
-  }
+.Testimonials figcaption {
+  color: #000;
+  font-size: .95rem;
+  font-style: normal;
+  margin-left:2rem;
+  margin-top: 0rem;
+}
 
-  .TeamPlay {
-    display: grid;
-    grid-column: 1 / -1;
-    grid-row: auto;
-  }
+.PopularChallenges {
+  padding: 1rem;
+  margin-top: 2.5rem;
+  font-family: sans-serif;
+  font-size: 1rem;
+  font-weight: 250;
+}
 
- .TeamPlay h2 {
+.PopularChallenges h2 {
+  padding: 1rem;
+  margin-top: 1rem;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  font-weight: 480;
+}
+
+.PopularChallenges h2:hover {
+  text-decoration: underline;
+  text-decoration-color: #079ce1;
+  text-decoration-thickness: 3px;
+}
+
+.ChallengeRooms {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 90%;
+  overflow-x: auto;
+  gap: 1rem;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-x;
+
+}
+
+.Room {
+  scroll-snap-align: center;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, .15);
+}
+
+.Room img {
+  width: 100%;
+  display: block;
+  border-radius: 10px 10px 0 0;
+}
+
+.CTAButtonCenter {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  margin-top: 0.5rem;
+}
+
+.OnsiteButton {
+  order: 1;
+}
+
+.OnlineButton {
+  order: 2;
+}
+
+
+.FullWidthSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 90%;
+  height: 53vh;
+  padding: 1.5rem;
+  gap: 0rem;
+}
+
+.FullWidthSectionText {
+  color: #fff;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.FullWidthSectionText:hover {
+  text-decoration: underline;
+  text-decoration-color: #03b2cd;
+  text-decoration-thickness: 1px;
+}
+
+.FullWidthSectionButton {
+  color: hwb(192 42% 16%);
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: sans-serif;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0.9rem 2.3rem;
+  margin: 0.9rem;
+  border: 2px solid hwb(192 42% 16%);
+  border-radius: 0.3rem;
+}
+
+.FullWidthSectionButton:hover {
+  border: 2px solid #9c38d6;
+}
+
+.Options {
+  grid-template-columns: 10rem;
+  grid-template-rows: auto;
+  column-gap: 0rem;
+  padding: 0;
+}
+
+.TeamPlay {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-row: auto;
+}
+
+.TeamPlay h2 {
   font-size: 1.4rem;
   font-family: sans-serif;
   font-weight: 760;
-  letter-spacing:0rem;
+  letter-spacing: 0rem;
   gap: 1;
-   padding-left: 2rem;
-   padding: 0.9rem;
-   margin: 0.5rem;
- }
+  padding-left: 2rem;
+  padding: 0.9rem;
+  margin: 0.5rem;
+}
 
-  .TeamPlay h2:hover {
-    text-decoration: underline;
-    text-decoration-color: #03b2cd;
-    text-decoration-thickness: 3px;
-  }
+.TeamPlay h2:hover {
+  text-decoration: underline;
+  text-decoration-color: #03b2cd;
+  text-decoration-thickness: 3px;
+}
 
- .TeamPlay p {
+.TeamPlay p {
   font-size: 1.2rem;
   font-family: sans-serif;
   font-weight: 500;
   margin-left: 1rem;
   padding: 0rem;
 
- }
- .TeamPlay p:hover {
-    text-decoration: underline;
-    text-decoration-color: #03b2cd;
-    text-decoration-thickness: 1px;
-  }
-
- .TeamPlay img {
-    display: block;
-    width: 100%;
-    height: 35vh;
-    object-fit: cover;
-    padding-bottom: 0px;  
-    }
-
-  .TeamPlay img:hover {
-    border: 3px solid  #03b2cd;
-  }
-
-  .TeamPlayButton {
-   background-color: #f31c1c;
-    font-family: Roboto;
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: white;
-    padding: 0.8rem 1rem;
-    margin: 1.5rem;
-    margin-left: 1rem;
-    border: none;
-    border-radius: 3px;
-    border: 3px solid transparent;
 }
 
- .TeamPlayButton:hover {
- border: 3px solid  #9c38d6;
+.TeamPlay p:hover {
+  text-decoration: underline;
+  text-decoration-color: #03b2cd;
+  text-decoration-thickness: 1px;
 }
 
-  .Onlineplay {
-    display: grid;
-    grid-column: 1 / -1;
-    grid-row: auto;   
-  }
+.TeamPlay img {
+  display: block;
+  width: 100%;
+  height: 35vh;
+  object-fit: cover;
+  padding-bottom: 0px;
+}
+
+.TeamPlay img:hover {
+  border: 3px solid #03b2cd;
+}
+
+.TeamPlayButton {
+  background-color: #f31c1c;
+  font-family: Roboto;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: white;
+  padding: 0.8rem 1rem;
+  margin: 1.5rem;
+  margin-left: 1rem;
+  border: none;
+  border-radius: 3px;
+  border: 3px solid transparent;
+}
+
+.TeamPlayButton:hover {
+  border: 3px solid #9c38d6;
+}
+
+.Onlineplay {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-row: auto;
+}
 
 .OnlinePlay h2 {
   font-size: 1.4rem;
   font-family: sans-serif;
   font-weight: 790;
-  letter-spacing:0rem;
+  letter-spacing: 0rem;
   gap: 0;
   margin: 1rem;
-  padding-bottom:1rem;
- }
+  padding-bottom: 1rem;
+}
 
-  .OnlinePlay h2:hover {
-    text-decoration: underline;
-    text-decoration-color: #03b2cd;
-    text-decoration-thickness: 2px;
-  }
+.OnlinePlay h2:hover {
+  text-decoration: underline;
+  text-decoration-color: #03b2cd;
+  text-decoration-thickness: 2px;
+}
 
 .OnlinePlay p {
   font-size: 1.2rem;
@@ -442,42 +451,46 @@ footer {
   width: auto;
   gap: 0;
   margin: 1rem;
-  padding: 0rem;;
- }
+  padding: 0rem;
+  ;
+}
+
 .OnlinePlay p:hover {
-    text-decoration: underline;
-    text-decoration-color: #03b2cd;
-    text-decoration-thickness: 1px;
-  }
+  text-decoration: underline;
+  text-decoration-color: #03b2cd;
+  text-decoration-thickness: 1px;
+}
 
- .OnlinePlay img {
-   display: block;
-    width: 100%;
-    height: 35vh;
-    object-fit: cover;
-    padding: 0px;
-    box-sizing: border-box; 
- }
+.OnlinePlay img {
+  display: block;
+  width: 100%;
+  height: 35vh;
+  object-fit: cover;
+  padding: 0px;
+  box-sizing: border-box;
+}
 
-  .OnlinePlay img:hover {
-    border: 2px solid  #03b2cd;
-  }
-  .OnlinePlayButton {
- background-color: #dc3232;
-    font-family: Roboto;
-    font-size: 1.1rem;
-    font-weight: 550;
-    color: white;
-    padding: 0.9rem 2rem;
-    margin: 3rem;
-    margin-left: 1rem;
-    border: none;
-    border-radius: 3px;
-    border: 3px solid transparent;    
+.OnlinePlay img:hover {
+  border: 2px solid #03b2cd;
+}
+
+.OnlinePlayButton {
+  background-color: #dc3232;
+  font-family: Roboto;
+  font-size: 1.1rem;
+  font-weight: 550;
+  color: white;
+  padding: 0.9rem 2rem;
+  margin: 3rem;
+  margin-left: 1rem;
+  border: none;
+  border-radius: 3px;
+  border: 3px solid transparent;
 
 }
- .OnlinePlayButton:hover {
- border: 2px solid  #9c38d6;
+
+.OnlinePlayButton:hover {
+  border: 2px solid #9c38d6;
 }
 
 /*.OnlinePlay  {
@@ -487,88 +500,89 @@ footer {
   order:2;
 }*/
 
-  .FooterContainer {
-    display: grid;
-    grid-template-columns: 1 / 2;
-    background-color: #001826;
-    color: white;
-    font-family: sans-serif;
-    font-size: 0.9rem;
-    font-weight: 50;
-    padding: 2.5rem;
-  }
+.FooterContainer {
+  display: grid;
+  grid-template-columns: 1 / 2;
+  background-color: #001826;
+  color: white;
+  font-family: sans-serif;
+  font-size: 0.9rem;
+  font-weight: 50;
+  padding: 2.5rem;
+}
 
-  .h {
-    font-family:sans-serif;
-    font-size: 2rem;
-    font-weight: 100;
-  }
+.h {
+  font-family: sans-serif;
+  font-size: 2rem;
+  font-weight: 100;
+}
 
-  .Footer:hover {
-    text-decoration: underline;
-    text-decoration-color: #079ce1;
-    text-decoration-thickness: 2px;
-  }
+.Footer:hover {
+  text-decoration: underline;
+  text-decoration-color: #079ce1;
+  text-decoration-thickness: 2px;
+}
 
-  .FooterSiteMap {
-    grid-column: 1 / -1;
-    display: grid;
-  }
+.FooterSiteMap {
+  grid-column: 1 / -1;
+  display: grid;
+}
 
-  .FooterSiteMap ul {
-    display: grid;
-    list-style: none;
-    margin-left: 0rem;
-    gap: 0rem;
-    margin: 0;
-    padding: 0;
-  }
+.FooterSiteMap ul {
+  display: grid;
+  list-style: none;
+  margin-left: 0rem;
+  gap: 0rem;
+  margin: 0;
+  padding: 0;
+}
 
-  .FooterSiteMap li {
-    text-decoration: none;
-    font-family: Roboto;
-    font-size: 0.9rem;
-    font-weight: 200;
-  }
+.FooterSiteMap li {
+  text-decoration: none;
+  font-family: Roboto;
+  font-size: 0.9rem;
+  font-weight: 200;
+}
 
-  .FooterSiteMap a {
-    color: #fff;
-    text-decoration: none;
-  }
+.FooterSiteMap a {
+  color: #fff;
+  text-decoration: none;
+}
 
-  .FooterContactInfo {
-    grid-column: 1 / -1;
-    display: grid;
-    row-gap: .0rem;
-  }
+.FooterContactInfo {
+  grid-column: 1 / -1;
+  display: grid;
+  row-gap: .0rem;
+}
 
-  .FooterContactInfo ul {
-    display: grid;
-    list-style: none;
-    margin-left: 0rem;
-    gap: 0rem;
-    padding: 0;
-    margin: 0;
-  }
+.FooterContactInfo ul {
+  display: grid;
+  list-style: none;
+  margin-left: 0rem;
+  gap: 0rem;
+  padding: 0;
+  margin: 0;
+}
 
-  .FooterContactInfo li {
-    text-decoration: none;
-    font-family: Roboto;
-    font-size: 0.9rem;
-    font-weight: 200;
-    color: #fff;
+.FooterContactInfo li {
+  text-decoration: none;
+  font-family: Roboto;
+  font-size: 0.9rem;
+  font-weight: 200;
+  color: #fff;
 
-  }
+}
 
-  .FooterContactInfo a {
-    color: #fff;
-    text-decoration: none;
-  }
+.FooterContactInfo a {
+  color: #fff;
+  text-decoration: none;
+}
 
-  p, h4 {
-    margin: 0.3rem;
-    padding:0rem;
-  }
+p,
+h4 {
+  margin: 0.3rem;
+  padding: 0rem;
+}
 
 
 
@@ -658,7 +672,8 @@ footer {
     align-items: center;
     gap: 0.1rem;
     margin-left: 25rem;
-    margin-top: -2rem;;
+    margin-top: -2rem;
+    ;
     width: 100%;
   }
 
@@ -752,7 +767,8 @@ footer {
     align-items: center;
     gap: 0.1rem;
     margin-left: 25rem;
-    margin-bottom: 4rem;;
+    margin-bottom: 4rem;
+    ;
     width: 100%;
   }
 
@@ -843,32 +859,37 @@ footer {
     margin: 0 auto;
   }
 
-   .TeamPlayPicture { grid-column: 1 / 2; }
-  .TeamPlayText { grid-column: 2 / 3; }
+  .TeamPlayPicture {
+    grid-column: 1 / 2;
+  }
 
- 
+  .TeamPlayText {
+    grid-column: 2 / 3;
+  }
+
+
   .TeamPlayPicture img {
     width: 100%;
     height: auto;
     object-fit: cover;
-    }
-
-  .TeamPlayPicture img:hover {
-    border: 3px solid  #03b2cd;
   }
 
-  .TeamPlayText { 
+  .TeamPlayPicture img:hover {
+    border: 3px solid #03b2cd;
+  }
+
+  .TeamPlayText {
     align-items: center;
     padding: 1rem 2rem;
   }
 
- .TeamPlayText h2 {
-  font-size: 1.4rem;
-  font-family: sans-serif;
-  font-weight: 760;
-  letter-spacing:0rem;
-  gap: 2rem; 
- }
+  .TeamPlayText h2 {
+    font-size: 1.4rem;
+    font-family: sans-serif;
+    font-weight: 760;
+    letter-spacing: 0rem;
+    gap: 2rem;
+  }
 
   .TeamPlayText h2:hover {
     text-decoration: underline;
@@ -876,17 +897,18 @@ footer {
     text-decoration-thickness: 3px;
   }
 
- .TeamPlayText p {
-  line-height: 1.5;
- }
- .TeamPlayText p:hover {
+  .TeamPlayText p {
+    line-height: 1.5;
+  }
+
+  .TeamPlayText p:hover {
     text-decoration: underline;
     text-decoration-color: #03b2cd;
     text-decoration-thickness: 3px;
   }
 
   .TeamPlayTextButton {
-   background-color: #f31c1c;
+    background-color: #f31c1c;
     font-family: Roboto;
     font-size: 1.2rem;
     font-weight: 500;
@@ -896,43 +918,49 @@ footer {
     border-radius: 3px;
     border: 3px solid transparent;
 
-}
- .TeamPlayTextButton:hover {
- border: 3px solid  #9c38d6;
-}
+  }
+
+  .TeamPlayTextButton:hover {
+    border: 3px solid #9c38d6;
+  }
 
   .OnlinePlay {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
   }
 
-  .OnlinePlayText { grid-column: 1 / 2; }
-  .OnlinePlayPicture { grid-column: 2 / 3; }  
+  .OnlinePlayText {
+    grid-column: 1 / 2;
+  }
 
-   .OnlinePlayPicture img {
+  .OnlinePlayPicture {
+    grid-column: 2 / 3;
+  }
+
+  .OnlinePlayPicture img {
     width: 100%;
     height: auto;
-    object-fit: cover;  
- }
+    object-fit: cover;
+  }
 
   .OnlinePlayPicture img:hover {
-    border: 3px solid  #03b2cd;
+    border: 3px solid #03b2cd;
   }
-   
+
   .OnlinePlayText {
     align-items: center;
     padding: 1rem 2rem;
   }
 
-.OnlinePlayText h2 {
-  font-size: 1.4rem;
-  font-family: sans-serif;
-  font-weight: 760;
-  letter-spacing:0rem;
-  gap: 2rem;
- }
+  .OnlinePlayText h2 {
+    font-size: 1.4rem;
+    font-family: sans-serif;
+    font-weight: 760;
+    letter-spacing: 0rem;
+    gap: 2rem;
+  }
 
   .OnlinePlayText h2:hover {
     text-decoration: underline;
@@ -940,18 +968,18 @@ footer {
     text-decoration-thickness: 3px;
   }
 
-.OnlinePlayText p {
-  line-height: 1.5;
-}
+  .OnlinePlayText p {
+    line-height: 1.5;
+  }
 
-.OnlinePlayText p:hover {
+  .OnlinePlayText p:hover {
     text-decoration: underline;
     text-decoration-color: #03b2cd;
     text-decoration-thickness: 3px;
   }
 
   .OnlinePlayTextButton {
- background-color: #f31c1c;
+    background-color: #f31c1c;
     font-family: Roboto;
     font-size: 1.2rem;
     font-weight: 500;
@@ -960,33 +988,35 @@ footer {
     border: none;
     border-radius: 3px;
     border: 3px solid transparent;
-}
- .OnlinePlayTextButton:hover {
- border: 3px solid  #9c38d6;
-}
+  }
 
-.FooterContainer {
-   display: grid;
+  .OnlinePlayTextButton:hover {
+    border: 3px solid #9c38d6;
+  }
+
+  .FooterContainer {
+    display: grid;
     grid-template-columns: 4fr 1fr 1fr;
     background-color: #001826;
     gap: 3rem;
     padding: 3.5rem;
-}
+  }
 
-.FooterContainer:hover {
-  border: 3px solid #079ce1;
-}
-.Footer h4 {
-  font-size: 0.9rem;
-  font-weight: 550;
-  
-}
+  .FooterContainer:hover {
+    border: 3px solid #079ce1;
+  }
 
-.Footer h4:hover {
-   text-decoration: underline;
+  .Footer h4 {
+    font-size: 0.9rem;
+    font-weight: 550;
+
+  }
+
+  .Footer h4:hover {
+    text-decoration: underline;
     text-decoration-color: #03b2cd;
     text-decoration-thickness: 3px;
-}
+  }
 
   .FooterText {
     Grid-column: 1 / 2;
@@ -1027,7 +1057,7 @@ footer {
     text-decoration-color: #079ce1;
     text-decoration-thickness: 2px;
   }
-  
+
   .FooterContactInfo {
     grid-column: 3 / 4;
     justify-self: center;
@@ -1055,8 +1085,10 @@ footer {
     text-decoration-thickness: 2px;
 
   }
-   p, h4 {
-  margin: 0;
-  padding: 0;
-}
+
+  p,
+  h4 {
+    margin: 0;
+    padding: 0;
   }
+}
