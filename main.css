@@ -199,6 +199,8 @@ footer {
   gap: 0rem;
   padding: 0;
    border: 2px solid transparant;
+    width: 420px;
+  height: 150px; 
 }
 
 .TestimonialsContent {
@@ -228,6 +230,8 @@ footer {
   font-family: sans-serif;
   font-size: 1.2rem;
   line-height: 1.2;
+  font-family: 200;
+  letter-spacing: 0.4px;
    padding: 0rem;
    margin: 0 rem,
 }
