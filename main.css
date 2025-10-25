@@ -309,7 +309,6 @@ footer {
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     touch-action: pan-x;
-
   }
 
   .Room {
@@ -323,6 +322,41 @@ footer {
     width: 100%;
     display: block;
     border-radius: 10px 10px 0 0;
+  }
+
+  .Room button {
+      Background-color: rgb(215, 10, 10);
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 550;
+    border: none;
+    border-radius: 4px;
+    padding: 0.7rem 1.7rem;
+    margin-left: 9.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+   .RoomInfo {
+    padding: 1rem;
+    font-family: sans-serif;
+  }
+
+  .RoomDetails {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .5rem;
+  }
+
+  .stars {
+    color: #e11c1c;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+  }
+
+  .participants {
+    font-size: .8rem;
+    color: #444;
   }
 
   .CTAButtonCenter {
@@ -459,14 +493,11 @@ footer {
   }
 
   .OnlinePlay {
-     display: grid;
-    grid-template-columns: 1fr;                 /* en kolumn */
+    display: grid;
+    grid-template-columns: 1fr;
     grid-template-areas:
       "pic"
-      "text"; 
-    /*display: grid;
-    grid-column: 1 / -1;
-    grid-row: auto;*/
+      "text";
   }
 
   .OnlinePlayPicture img {
@@ -483,9 +514,9 @@ footer {
     border: 2px solid #03b2cd;
   }
 
-  .OnlinePlayText { 
-    grid-column: 1; 
-    grid-row: 2; 
+  .OnlinePlayText {
+    grid-column: 1;
+    grid-row: 2;
   }
 
   .OnlinePlay h2 {
@@ -519,8 +550,6 @@ footer {
     text-decoration-color: #03b2cd;
     text-decoration-thickness: 1px;
   }
-
-  
 
   .OnlinePlayButton {
     background-color: #dc3232;
@@ -743,7 +772,7 @@ footer {
   .OnsiteButton {
     background-color: #89d9e9;
     font-family: Roboto;
-     font-size: 1.2rem;
+    font-size: 1.2rem;
     font-weight: 700;
     line-height: 100%;
     padding: 1.2rem 2.8rem;
@@ -893,12 +922,13 @@ footer {
   .Room img {
     width: 100%;
     display: block;
-    border-radius: 10px 10px 0 0; 
+    border-radius: 10px 10px 0 0;
   }
 
   .Room:hover {
-    border-color:#035ecd;
+    border-color: #035ecd;
   }
+
   .Room h3 {
     font-size: 1.4rem;
     font-family: sans-serif;
@@ -914,10 +944,32 @@ footer {
     border: none;
     border-radius: 4px;
     padding: 0.7rem 1.7rem;
-    margin-left: 9.5rem;
-    margin-bottom: 0.5rem;;
+    margin-left: 9rem;
+    margin-bottom: 0.5rem;
   }
-  
+
+  .RoomInfo {
+    padding: 1rem;
+    font-family: sans-serif;
+  }
+
+  .RoomDetails {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .5rem;
+  }
+
+  .stars {
+    color: #e11c1c;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+  }
+
+  .participants {
+    font-size: .8rem;
+    color: #444;
+  }
 
   .CTAButtoCenter {
     width: 100%;
@@ -939,7 +991,7 @@ footer {
     box-sizing: border-box;
     margin-left: 18rem;
     margin-bottom: 4rem;
-    
+
   }
 
   .OnlineButtonCenter:hover {
@@ -1170,7 +1222,7 @@ footer {
     background-color: #001826;
     gap: 3rem;
     padding: 3.5rem;
-     border: 3px solid transparent;
+    border: 3px solid transparent;
     box-sizing: border-box;
     transition: border-color .2s ease;
   }
@@ -1186,7 +1238,7 @@ footer {
 
   .Footer h4:hover {
     color: #03b2cd;
-    
+
   }
 
   .FooterText {
@@ -1198,7 +1250,7 @@ footer {
     align-items: start;
     padding: 1.5rem 2rem;
     text-decoration: none;
-   
+
   }
 
   .FooterText:hover {
