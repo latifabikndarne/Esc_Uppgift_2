@@ -686,7 +686,6 @@ footer {
     font-size: 1.2rem;
     font-weight: 450;
     line-height: 100%;
-
   }
 
   .NavigationBar a {
@@ -718,10 +717,9 @@ footer {
     display: flex;
     position: absolute;
     align-items: center;
-    gap: 0.1rem;
-    margin-left: 25rem;
+    gap: 1rem;
+    margin-left: 20rem;
     margin-top: -2rem;
-    ;
     width: 100%;
   }
 
@@ -729,10 +727,10 @@ footer {
     background-color: red;
     color: white;
     font-family: Roboto;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 700;
     line-height: 100%;
-    padding: 1rem 1.7rem;
+    padding: 1.2rem 2.8rem;
     border-radius: 4px;
     border: 3px solid transparent;
     box-sizing: border-box;
@@ -745,10 +743,10 @@ footer {
   .OnsiteButton {
     background-color: #89d9e9;
     font-family: Roboto;
-    font-size: 1rem;
+     font-size: 1.2rem;
     font-weight: 700;
     line-height: 100%;
-    padding: 1rem 1.7rem;
+    padding: 1.2rem 2.8rem;
     border-radius: 4px;
     border: 3px solid transparent;
     box-sizing: border-box;
@@ -812,7 +810,6 @@ footer {
     margin: 0;
   }
 
-
   .TestimonialsContent2 {
     flex: 0 1 460px;
     display: flex;
@@ -840,7 +837,6 @@ footer {
     margin: 0;
     font: italic 400 1.1rem/1.3 sans-serif;
     text-align: left;
-
   }
 
   .TestimonialsContent2 figcaption {
@@ -882,6 +878,7 @@ footer {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 3rem;
   }
 
   .Room {
@@ -901,47 +898,49 @@ footer {
     display: grid;
     grid-auto-flow: column;
     justify-content: center;
-    gap: 2rem;
   }
 
-  .OnlineButton {
+  .OnlineButtonCenter {
     background-color: #e81717;
     color: white;
     font-family: Roboto;
     font-size: 1rem;
     font-weight: 700;
     line-height: 100%;
-    padding: 1rem 1.7rem;
+    padding: 1.5rem 3rem;
     border-radius: 4px;
     border: 3px solid transparent;
     box-sizing: border-box;
+    margin-left: 18rem;
+    margin-bottom: 4rem;
+    
   }
 
-  .OnlineButton:hover {
+  .OnlineButtonCenter:hover {
     border: 3px solid #ac47c8;
   }
 
-  .OnsiteButton {
+  .OnsiteButtonCenter {
     background-color: #89d9e9;
     font-family: Roboto;
     font-size: 1rem;
     font-weight: 700;
     line-height: 100%;
-    padding: 1rem 1.7rem;
+    padding: 1.5rem 3rem;
     border-radius: 4px;
     border: 3px solid transparent;
     box-sizing: border-box;
+    margin-left: 1rem;
   }
 
-  .OnsiteButton:hover {
+  .OnsiteButtonCenter:hover {
     border: 3px solid #ac47c8;
   }
 
 
   .FullWidthSection {
     display: flex;
-    position: relative;
-    width: 95%;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -975,7 +974,6 @@ footer {
     margin: 0rem;
     border: 1.5px solid hwb(192 42% 16%);
     border-radius: 0.3rem;
-
   }
 
   .FullWidthSectionButton:hover {
