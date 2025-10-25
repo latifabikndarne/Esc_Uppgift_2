@@ -112,19 +112,11 @@ footer {
     display: none;
   }
 
-  .MainContent {
-    grid-template-columns: 7rem;
-    grid-template-rows: auto;
-    align-items: center;
-    justify-items: start;
-    column-gap: 0rem;
-    padding: 0;
-  }
 
   .HeroMobile {
     display: block;
     width: 100%;
-    height: 35vh;
+    height: 18rem;
     object-fit: cover;
     padding: 0px;
     box-sizing: border-box;
@@ -185,11 +177,10 @@ footer {
     text-decoration-thickness: 3px;
   }
 
-
   .TestimonialsContent1 {
     flex: 0 1 460px;
     display: flex;
-    align-items: flex-start;
+    align-content: flex-start;
     gap: 1rem;
     padding: .75rem;
     border-radius: 1px;
@@ -440,7 +431,7 @@ footer {
   .TeamPlay img {
     display: block;
     width: 100%;
-    height: 35vh;
+    height: 18rem;
     object-fit: cover;
     padding-bottom: 0px;
   }
@@ -467,7 +458,7 @@ footer {
     border: 3px solid #9c38d6;
   }
 
-  .Onlineplay {
+  .OnlinePlay {
     display: grid;
     grid-column: 1 / -1;
     grid-row: auto;
@@ -509,7 +500,7 @@ footer {
   .OnlinePlay img {
     display: block;
     width: 100%;
-    height: 35vh;
+    height: 18rem;
     object-fit: cover;
     padding: 0px;
     box-sizing: border-box;
@@ -894,11 +885,11 @@ footer {
   }
 
   .CTAButtoCenter {
-   width: 100%;
-  display: grid;
-  grid-auto-flow: column;
-  justify-content: center;    
-  gap: 2rem;
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    gap: 2rem;
   }
 
   .OnlineButton {
@@ -1000,21 +991,29 @@ footer {
     width: 100%;
     height: auto;
     object-fit: cover;
+    border: 3px solid transparent;
+    box-sizing: border-box;
+    transition: border-color .2s ease;
   }
 
   .TeamPlayPicture img:hover {
-    border: 3px solid #03b2cd;
+    border-color: #03b2cd;
   }
 
   .TeamPlayText {
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
+    font-size: 1rem 3rem;
+    font-family: sans-serif;
+    font-weight: 450;
+    letter-spacing: 0rem;
+    gap: 0rem;
   }
 
   .TeamPlayText h2 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-family: sans-serif;
-    font-weight: 760;
+    font-weight: 700;
     letter-spacing: 0rem;
     gap: 2rem;
   }
@@ -1045,7 +1044,6 @@ footer {
     border: none;
     border-radius: 3px;
     border: 3px solid transparent;
-
   }
 
   .TeamPlayTextButton:hover {
@@ -1071,10 +1069,13 @@ footer {
     width: 100%;
     height: auto;
     object-fit: cover;
+    border: 3px solid transparent;
+    box-sizing: border-box;
+    transition: border-color .2s ease;
   }
 
   .OnlinePlayPicture img:hover {
-    border: 3px solid #03b2cd;
+    border-color: #03b2cd;
   }
 
   .OnlinePlayText {
@@ -1128,10 +1129,13 @@ footer {
     background-color: #001826;
     gap: 3rem;
     padding: 3.5rem;
+     border: 3px solid transparent;
+    box-sizing: border-box;
+    transition: border-color .2s ease;
   }
 
   .FooterContainer:hover {
-    border: 3px solid #079ce1;
+    border-color: #079ce1;
   }
 
   .Footer h4 {
@@ -1140,9 +1144,8 @@ footer {
   }
 
   .Footer h4:hover {
-    text-decoration: underline;
-    text-decoration-color: #03b2cd;
-    text-decoration-thickness: 3px;
+    color: #03b2cd;
+    
   }
 
   .FooterText {
@@ -1153,6 +1156,8 @@ footer {
     font-weight: 100;
     align-items: start;
     padding: 1.5rem 2rem;
+    text-decoration: none;
+   
   }
 
   .FooterText:hover {
@@ -1217,6 +1222,4 @@ footer {
     margin: 0;
     padding: 0;
   }
-
-
 }
