@@ -459,9 +459,33 @@ footer {
   }
 
   .OnlinePlay {
-    display: grid;
+     display: grid;
+    grid-template-columns: 1fr;                 /* en kolumn */
+    grid-template-areas:
+      "pic"
+      "text"; 
+    /*display: grid;
     grid-column: 1 / -1;
-    grid-row: auto;
+    grid-row: auto;*/
+  }
+
+  .OnlinePlayPicture img {
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+    height: 18rem;
+    object-fit: cover;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+  .OnlinePlayPicture img:hover {
+    border: 2px solid #03b2cd;
+  }
+
+  .OnlinePlayText { 
+    grid-column: 1; 
+    grid-row: 2; 
   }
 
   .OnlinePlay h2 {
@@ -488,7 +512,6 @@ footer {
     gap: 0;
     margin: 1rem;
     padding: 0rem;
-
   }
 
   .OnlinePlay p:hover {
@@ -497,18 +520,7 @@ footer {
     text-decoration-thickness: 1px;
   }
 
-  .OnlinePlay img {
-    display: block;
-    width: 100%;
-    height: 18rem;
-    object-fit: cover;
-    padding: 0px;
-    box-sizing: border-box;
-  }
-
-  .OnlinePlay img:hover {
-    border: 2px solid #03b2cd;
-  }
+  
 
   .OnlinePlayButton {
     background-color: #dc3232;
@@ -1034,7 +1046,7 @@ footer {
     text-decoration-thickness: 3px;
   }
 
-  .TeamPlayTextButton {
+  .TeamPlayButton {
     background-color: #f31c1c;
     font-family: Roboto;
     font-size: 1.2rem;
@@ -1046,7 +1058,7 @@ footer {
     border: 3px solid transparent;
   }
 
-  .TeamPlayTextButton:hover {
+  .TeamPlayButton:hover {
     border: 3px solid #9c38d6;
   }
 
@@ -1081,6 +1093,11 @@ footer {
   .OnlinePlayText {
     align-items: center;
     padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-family: sans-serif;
+    font-weight: 450;
+    letter-spacing: 0rem;
+    gap: 0rem;
   }
 
   .OnlinePlayText h2 {
@@ -1107,19 +1124,19 @@ footer {
     text-decoration-thickness: 3px;
   }
 
-  .OnlinePlayTextButton {
+  .OnlinePlayButton {
     background-color: #f31c1c;
+    color: white;
     font-family: Roboto;
     font-size: 1.2rem;
     font-weight: 500;
-    color: white;
     padding: 0.8rem 1rem;
     border: none;
     border-radius: 3px;
     border: 3px solid transparent;
   }
 
-  .OnlinePlayTextButton:hover {
+  .OnlinePlayButton:hover {
     border: 3px solid #9c38d6;
   }
 
