@@ -363,14 +363,14 @@ footer {
     display: grid;
     align-items: center;
     justify-items: center;
-    margin-top: 0.5rem;
+    margin-top: 0.5rem; 
   }
 
-  .OnsiteButton {
+  .OnsiteButtonCenter {
     order: 1;
   }
 
-  .OnlineButton {
+  .OnlineButtonCenter {
     order: 2;
   }
 
