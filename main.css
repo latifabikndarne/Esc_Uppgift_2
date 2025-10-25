@@ -361,18 +361,19 @@ footer {
 
   .CTAButtonCenter {
     display: grid;
-    align-items: center;
+    grid-template-columns: auto auto;
+    grid-template-areas: "Onsite" "Online"; 
     justify-items: center;
-    margin-top: 0.5rem; 
+    margin-top: 0.75rem; 
   }
-
   .OnsiteButtonCenter {
-    order: 1;
-  }
+     grid-area: Onsite; 
+    }
+  
+ .OnlineButtonCenter { 
+  grid-area: Online; 
+ } 
 
-  .OnlineButtonCenter {
-    order: 2;
-  }
 
   .FullWidthSection {
     display: flex;
@@ -569,13 +570,6 @@ footer {
   .OnlinePlayButton:hover {
     border: 2px solid #9c38d6;
   }
-
-  /*.OnlinePlay  {
-  order:2;
-}
-.OnlinePlay img {
-  order:2;
-}*/
 
   .FooterContainer {
     display: grid;
@@ -908,7 +902,7 @@ footer {
     height: 21rem;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 3rem;
+    padding: 5rem;
   }
 
   .Room {
