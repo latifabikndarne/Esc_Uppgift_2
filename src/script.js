@@ -2,25 +2,21 @@ const menuBtn = document.getElementById('menuButton');
 const overlay = document.getElementById('menuOverlay');
 const closeBtn = overlay ? overlay.querySelector('.overlay-close') : null;
 
-let justOpened = false; // skydd mot att öppningsklicket stänger direkt
-
+let justOpened = false; 
 function openMenu() {
   menuBtn.setAttribute('aria-expanded', 'true');
   overlay.hidden = false;
   document.body.classList.add('no-scroll', 'blurred');
 
-  // nollställ ev. tidigare tillstånd
   overlay.classList.remove('closing', 'open');
-
-  // tvinga reflow så att öppningsanimation kan starta om
+ 
   void overlay.offsetWidth;
 
-  // lägg på open i nästa frame
-  requestAnimationFrame(() => {
+   requestAnimationFrame(() => {
     overlay.classList.add('open');
   });
 
-  // ignorera första klicket på overlay precis efter öppning
+ 
   justOpened = true;
   setTimeout(() => { justOpened = false; }, 200);
 
@@ -31,7 +27,7 @@ function openMenu() {
 function closeMenu() {
   menuBtn.setAttribute('aria-expanded', 'false');
 
-  // stäng direkt (vi förlitar oss inte på animationend)
+  
   overlay.classList.remove('open', 'closing');
   overlay.hidden = true;
 
@@ -44,9 +40,9 @@ function toggleMenu() {
   (isOpen ? closeMenu : openMenu)();
 }
 
-// ==== events ====
+
 menuBtn.addEventListener('click', (e) => {
-  e.stopPropagation(); // extra säkerhet mot bubbla
+  e.stopPropagation(); 
   toggleMenu();
 });
 menuBtn.addEventListener('keydown', e => {
@@ -59,7 +55,7 @@ document.addEventListener('keydown', e => {
   if (e.key === 'Escape' && !overlay.hidden) closeMenu();
 });
 
-// Stäng på klick i bakgrunden – men låt första klicket efter öppning passera
+
 overlay.addEventListener('click', e => {
   if (justOpened) return;
   if (e.target === overlay) closeMenu();
